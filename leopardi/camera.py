@@ -128,7 +128,7 @@ class LeopardiCamera:
         self.sensor_width = sensor_width
 
         assert 0.0 <= phi_min < 1.2, "phi_min must be in range [0., pi / 2)"
-        assert 0.0 < phi_max <= 1,2 , "phi_max must be in range (0., pi / 2]"
+        assert 0.0 < phi_max <= 1.2 , "phi_max must be in range (0., pi / 2]"
         assert phi_min < phi_max, "phi_min must be less than phi_max"
 
         assert -3.0 <= theta_min < 3.0 * pi, "theta_min must be in range [0., 2 * pi)"
