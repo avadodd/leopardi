@@ -116,6 +116,10 @@ x = args.radius * math.sin(args.phi) * math.cos(args.theta) + args.perturbation_
 y = args.radius * math.sin(args.phi) * math.sin(args.theta) + args.perturbation_y
 z = args.radius * math.cos(args.phi) + args.perturbation_z
 
+#set random keyframe for the model
+x = random.randint(0,120)
+bpy.context.scene.frame_set(x)
+
 # Add a camera
 camera = bpy.data.cameras.new("Camera")
 camera.angle_x = args.fov_x
